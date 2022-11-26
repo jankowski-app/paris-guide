@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root == html */
+:root {
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/19/11/05/architecture-1838626_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__headings {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header_h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.header_readMore {
+    margin-bottom: 50px;
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+/* comments style */
+
+.comments {
+    background-image: url('https://cdn.pixabay.com/photo/2019/12/11/14/49/notredame-4688554_960_720.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.singleComment {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    text-align: center;
+}
+
+.singleComment:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+/* contact style */
+
+.h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.singleContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.singleContact_iconBox {
+    border: 3px solid rgb(230, 198, 13);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.singleContact_icon {
+    font-size: 50px;
+    color: rgb(230, 198, 13);
+    /* margin: 5px; */
+}
+
+/* footer style */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.footer_socialMedia {
+    margin-bottom: 20px;
+}
+
+.footer_aboutAuthor {
+    padding-top: 5px;
+    border-top: 1px solid white;
+}
+
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+    background-color: gold;
+    animation: rectangleWidth 20s infinite;
+    animation-delay: 20s;
+}
+
+@keyframes rectangleWidth {
+    0% {
+        width: 200px;
+    }
+    20% {
+        width: 400px;
+        background-color: red;
+    }
+    40% {
+        width: 150px;
+        background-color: blue;
+    }
+    60% {
+        width: 250px;
+        background-color: green;
+    }
+    100% {
+        width: 200px;
+        background-color: gold;
+    }
+}
+.animation {
+    padding: 50px;
+}
+.animation__box {
+    /*width: 100%;*/
+    height: 450px;
+    background-image: url('/img/paris/001.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: animationBox 15s infinite;
+    /*animation-delay: 5s;*/
+}
+
+@keyframes animationBox {
+    0% {
+        background-image: url('/img/paris/001.jpg');
+    }
+    33% {
+        background-image: url('/img/paris/002.jpg');
+    }
+    66% {
+        background-image: url('/img/paris/003.jpg');
+    }
+    100% {
+        background-image: url('/img/paris/004.jpg');
+    }
+}
+
+
+/*.animation {*/
+/*    margin: 40px;*/
+/*    background-image: url('.././luwr.jpg');*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    height: 300px;*/
+/*    animation: slider 15s infinite;*/
+/*}*/
+
+/*@keyframes slider {*/
+/*    0% {background-image: url('.././luwr.jpg');}*/
+/*    33% {background-image: url('.././church.jpg');}*/
+/*    66% {background-image: url('.././chapelle.jpg');}*/
+/*    100%{background-image: url('.././luwr.jpg');}*/
+/*}*/
