@@ -43,3 +43,36 @@
     font-size: 18px;
     border-radius: 15px;
 }
+
+/* contact style */
+
+.h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.singleContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.singleContact_iconBox {
+    border: 3px solid rgb(230, 198, 13);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.singleContact_icon {
+    font-size: 50px;
+    color: rgb(230, 198, 13);
+    /* margin: 5px; */
+}
